@@ -1,20 +1,25 @@
+#region
+
+using System;
+using System.Linq;
+using System.Windows.Forms;
 using SharpJunk.Forms;
 
+#endregion
 
-namespace SharpJunk;
-
-internal static class Program
+namespace SharpJunk
 {
-
-    /// <summary>
-    ///     The main entry point for the application.
-    /// </summary>
-    [STAThread]
-    private static void Main()
+    internal static class Program
     {
-        Application.EnableVisualStyles();
-        Application.SetCompatibleTextRenderingDefault(false);
-        Application.Run(new Main());
+        /// <summary>
+        ///     The main entry point for the application.
+        /// </summary>
+        [STAThread]
+        private static void Main()
+        {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Main());
+        }
     }
-
 }
