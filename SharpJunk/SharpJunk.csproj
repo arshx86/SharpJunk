@@ -2,25 +2,24 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net472</TargetFramework>
+    <TargetFramework>net48</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <DebugType>none</DebugType>
     <LangVersion>latest</LangVersion>
-    <ApplicationIcon>icons8_trash_can.ico</ApplicationIcon>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <Version>1.7</Version>
+    <Authors>arshx86</Authors>
+    <PackageProjectUrl>https://github.com/arshx86/SharpJunk</PackageProjectUrl>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Content Include="icons8_trash_can.ico" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Costura.Fody" Version="5.7.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Guna.UI2.WinForms" Version="2.0.3.2" />
+    <PackageReference Include="Guna.UI2.WinForms" Version="2.0.3.3" />
     <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.3.0-1.final" />
     <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2">
       <PrivateAssets>all</PrivateAssets>
