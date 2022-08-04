@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
@@ -36,31 +37,26 @@
             this.Infobtn = new Guna.UI2.WinForms.Guna2Button();
             this.Genbtn = new Guna.UI2.WinForms.Guna2Button();
             this.Settingsbtn = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.arrays = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.enums = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panelGen = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.panelSet = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            this.dlla = new Guna.UI2.WinForms.Guna2ToggleSwitch();
-            this.ifelse = new Guna.UI2.WinForms.Guna2ToggleSwitch();
-            this.variablea = new Guna.UI2.WinForms.Guna2ToggleSwitch();
-            this.methoda = new Guna.UI2.WinForms.Guna2ToggleSwitch();
-            this.funcs = new Guna.UI2.WinForms.Guna2ToggleSwitch();
-            this.usinga = new Guna.UI2.WinForms.Guna2ToggleSwitch();
-            this.arraya = new Guna.UI2.WinForms.Guna2ToggleSwitch();
-            this.enuma = new Guna.UI2.WinForms.Guna2ToggleSwitch();
-            this.infoPanel = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.threadBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.infoPanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.changelogs = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.enuma = new Guna.UI2.WinForms.Guna2Button();
+            this.arraya = new Guna.UI2.WinForms.Guna2Button();
+            this.usinga = new Guna.UI2.WinForms.Guna2Button();
+            this.funcs = new Guna.UI2.WinForms.Guna2Button();
+            this.methoda = new Guna.UI2.WinForms.Guna2Button();
+            this.variablea = new Guna.UI2.WinForms.Guna2Button();
+            this.ifelse = new Guna.UI2.WinForms.Guna2Button();
+            this.dlla = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.panelGen.SuspendLayout();
@@ -82,13 +78,14 @@
             this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI Historic", 11.25F);
             this.guna2Button1.ForeColor = System.Drawing.Color.RosyBrown;
-            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.Location = new System.Drawing.Point(217, 297);
+            this.guna2Button1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
+            this.guna2Button1.Location = new System.Drawing.Point(124, 297);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(180, 45);
             this.guna2Button1.TabIndex = 8;
             this.guna2Button1.Text = "Generate";
-            this.guna2Button1.Click += new System.EventHandler(this.Start);
+            this.guna2Button1.Click += new System.EventHandler(this.Create);
             // 
             // guna2ControlBox1
             // 
@@ -96,7 +93,7 @@
             this.guna2ControlBox1.Animated = true;
             this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(743, 11);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(743, 12);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
             this.guna2ControlBox1.TabIndex = 9;
@@ -160,10 +157,10 @@
             this.Infobtn.Image = global::SharpJunk.Properties.Resources.icons8_info_25px;
             this.Infobtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Infobtn.ImageOffset = new System.Drawing.Point(-2, 0);
-            this.Infobtn.Location = new System.Drawing.Point(3, 234);
+            this.Infobtn.Location = new System.Drawing.Point(0, 234);
             this.Infobtn.Name = "Infobtn";
             this.Infobtn.PressedColor = System.Drawing.Color.White;
-            this.Infobtn.Size = new System.Drawing.Size(167, 37);
+            this.Infobtn.Size = new System.Drawing.Size(173, 37);
             this.Infobtn.TabIndex = 2;
             this.Infobtn.Text = "Info";
             this.Infobtn.Click += new System.EventHandler(this.Infobtn_Click);
@@ -184,12 +181,12 @@
             this.Genbtn.Image = global::SharpJunk.Properties.Resources.icons8_visual_studio_code_2019_25px;
             this.Genbtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Genbtn.ImageOffset = new System.Drawing.Point(-7, 0);
-            this.Genbtn.Location = new System.Drawing.Point(3, 194);
+            this.Genbtn.Location = new System.Drawing.Point(0, 194);
             this.Genbtn.Name = "Genbtn";
             this.Genbtn.PressedColor = System.Drawing.Color.White;
-            this.Genbtn.Size = new System.Drawing.Size(167, 38);
+            this.Genbtn.Size = new System.Drawing.Size(173, 37);
             this.Genbtn.TabIndex = 1;
-            this.Genbtn.Text = "Generate";
+            this.Genbtn.Text = "Editor";
             this.Genbtn.Click += new System.EventHandler(this.Genbtn_Click);
             // 
             // Settingsbtn
@@ -209,125 +206,50 @@
             this.Settingsbtn.Image = global::SharpJunk.Properties.Resources.icons8_settings_500px;
             this.Settingsbtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Settingsbtn.ImageOffset = new System.Drawing.Point(-3, 0);
-            this.Settingsbtn.Location = new System.Drawing.Point(3, 156);
+            this.Settingsbtn.Location = new System.Drawing.Point(0, 156);
             this.Settingsbtn.Name = "Settingsbtn";
             this.Settingsbtn.PressedColor = System.Drawing.Color.White;
-            this.Settingsbtn.Size = new System.Drawing.Size(167, 37);
+            this.Settingsbtn.Size = new System.Drawing.Size(173, 37);
             this.Settingsbtn.TabIndex = 0;
-            this.Settingsbtn.Text = "Settings";
+            this.Settingsbtn.Text = "Options";
             this.Settingsbtn.Click += new System.EventHandler(this.Settingsbtn_Click);
-            // 
-            // guna2HtmlLabel2
-            // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel2.IsSelectionEnabled = false;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(443, 110);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(37, 19);
-            this.guna2HtmlLabel2.TabIndex = 18;
-            this.guna2HtmlLabel2.Text = "If Else";
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel1.IsSelectionEnabled = false;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(278, 108);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(57, 19);
-            this.guna2HtmlLabel1.TabIndex = 20;
-            this.guna2HtmlLabel1.Text = "Functions";
-            // 
-            // guna2HtmlLabel6
-            // 
-            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel6.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel6.IsSelectionEnabled = false;
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(443, 150);
-            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(73, 19);
-            this.guna2HtmlLabel6.TabIndex = 12;
-            this.guna2HtmlLabel6.Text = "DLL Imports";
-            // 
-            // arrays
-            // 
-            this.arrays.BackColor = System.Drawing.Color.Transparent;
-            this.arrays.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.arrays.ForeColor = System.Drawing.Color.White;
-            this.arrays.IsSelectionEnabled = false;
-            this.arrays.Location = new System.Drawing.Point(76, 146);
-            this.arrays.Name = "arrays";
-            this.arrays.Size = new System.Drawing.Size(40, 19);
-            this.arrays.TabIndex = 3;
-            this.arrays.Text = "Arrays";
-            // 
-            // guna2HtmlLabel5
-            // 
-            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel5.IsSelectionEnabled = false;
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(76, 186);
-            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(42, 19);
-            this.guna2HtmlLabel5.TabIndex = 14;
-            this.guna2HtmlLabel5.Text = "Usings";
-            this.guna2HtmlLabel5.Click += new System.EventHandler(this.guna2HtmlLabel5_Click);
-            // 
-            // enums
-            // 
-            this.enums.BackColor = System.Drawing.Color.Transparent;
-            this.enums.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.enums.ForeColor = System.Drawing.Color.White;
-            this.enums.IsSelectionEnabled = false;
-            this.enums.Location = new System.Drawing.Point(76, 110);
-            this.enums.Name = "enums";
-            this.enums.Size = new System.Drawing.Size(41, 19);
-            this.enums.TabIndex = 1;
-            this.enums.Text = "Enums";
-            // 
-            // guna2HtmlLabel4
-            // 
-            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel4.IsSelectionEnabled = false;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(280, 188);
-            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(57, 19);
-            this.guna2HtmlLabel4.TabIndex = 16;
-            this.guna2HtmlLabel4.Text = "Variables";
-            // 
-            // guna2HtmlLabel3
-            // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel3.IsSelectionEnabled = false;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(280, 146);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(55, 19);
-            this.guna2HtmlLabel3.TabIndex = 5;
-            this.guna2HtmlLabel3.Text = "Methods";
             // 
             // panelGen
             // 
+            this.panelGen.Controls.Add(this.guna2Button5);
             this.panelGen.Controls.Add(this.guna2Button1);
             this.panelGen.Controls.Add(this.richTextBox1);
-            this.panelGen.Location = new System.Drawing.Point(176, 46);
+            this.panelGen.Location = new System.Drawing.Point(176, 41);
             this.panelGen.Name = "panelGen";
             this.panelGen.Size = new System.Drawing.Size(609, 351);
             this.panelGen.TabIndex = 27;
             this.panelGen.Visible = false;
             // 
+            // guna2Button5
+            // 
+            this.guna2Button5.Animated = true;
+            this.guna2Button5.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Button5.BorderRadius = 10;
+            this.guna2Button5.BorderThickness = 1;
+            this.guna2Button5.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
+            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI Historic", 11.25F);
+            this.guna2Button5.ForeColor = System.Drawing.Color.RosyBrown;
+            this.guna2Button5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.guna2Button5.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
+            this.guna2Button5.Location = new System.Drawing.Point(325, 297);
+            this.guna2Button5.Name = "guna2Button5";
+            this.guna2Button5.Size = new System.Drawing.Size(180, 45);
+            this.guna2Button5.TabIndex = 11;
+            this.guna2Button5.Text = "Copy";
+            this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
+            // 
             // panelSet
             // 
-            this.panelSet.Controls.Add(this.threadBox);
-            this.panelSet.Controls.Add(this.guna2Button4);
             this.panelSet.Controls.Add(this.dlla);
             this.panelSet.Controls.Add(this.ifelse);
             this.panelSet.Controls.Add(this.variablea);
@@ -336,256 +258,14 @@
             this.panelSet.Controls.Add(this.usinga);
             this.panelSet.Controls.Add(this.arraya);
             this.panelSet.Controls.Add(this.enuma);
-            this.panelSet.Controls.Add(this.guna2HtmlLabel2);
-            this.panelSet.Controls.Add(this.guna2HtmlLabel1);
-            this.panelSet.Controls.Add(this.guna2HtmlLabel3);
-            this.panelSet.Controls.Add(this.guna2HtmlLabel6);
-            this.panelSet.Controls.Add(this.guna2HtmlLabel4);
-            this.panelSet.Controls.Add(this.enums);
-            this.panelSet.Controls.Add(this.guna2HtmlLabel5);
-            this.panelSet.Controls.Add(this.arrays);
+            this.panelSet.Controls.Add(this.label2);
+            this.panelSet.Controls.Add(this.label1);
+            this.panelSet.Controls.Add(this.threadBox);
             this.panelSet.Location = new System.Drawing.Point(176, 46);
             this.panelSet.Name = "panelSet";
             this.panelSet.Size = new System.Drawing.Size(609, 345);
             this.panelSet.TabIndex = 26;
             this.panelSet.Visible = false;
-            // 
-            // guna2Button4
-            // 
-            this.guna2Button4.Animated = true;
-            this.guna2Button4.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2Button4.BorderRadius = 10;
-            this.guna2Button4.BorderThickness = 1;
-            this.guna2Button4.CustomBorderColor = System.Drawing.Color.Transparent;
-            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(37)))));
-            this.guna2Button4.Font = new System.Drawing.Font("Verdana", 11.25F);
-            this.guna2Button4.ForeColor = System.Drawing.Color.Chocolate;
-            this.guna2Button4.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button4.Location = new System.Drawing.Point(201, 25);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(180, 45);
-            this.guna2Button4.TabIndex = 29;
-            this.guna2Button4.Text = "Options";
-            // 
-            // dlla
-            // 
-            this.dlla.Animated = true;
-            this.dlla.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.dlla.CheckedState.FillColor = System.Drawing.Color.BlueViolet;
-            this.dlla.CheckedState.InnerBorderColor = System.Drawing.Color.White;
-            this.dlla.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.dlla.Location = new System.Drawing.Point(397, 151);
-            this.dlla.Name = "dlla";
-            this.dlla.ShadowDecoration.BorderRadius = 50;
-            this.dlla.Size = new System.Drawing.Size(40, 20);
-            this.dlla.TabIndex = 36;
-            this.dlla.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.dlla.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.dlla.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
-            this.dlla.UncheckedState.InnerColor = System.Drawing.Color.White;
-            // 
-            // ifelse
-            // 
-            this.ifelse.Animated = true;
-            this.ifelse.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ifelse.CheckedState.FillColor = System.Drawing.Color.BlueViolet;
-            this.ifelse.CheckedState.InnerBorderColor = System.Drawing.Color.White;
-            this.ifelse.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.ifelse.Location = new System.Drawing.Point(397, 110);
-            this.ifelse.Name = "ifelse";
-            this.ifelse.ShadowDecoration.BorderRadius = 50;
-            this.ifelse.Size = new System.Drawing.Size(40, 20);
-            this.ifelse.TabIndex = 35;
-            this.ifelse.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.ifelse.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.ifelse.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
-            this.ifelse.UncheckedState.InnerColor = System.Drawing.Color.White;
-            // 
-            // variablea
-            // 
-            this.variablea.Animated = true;
-            this.variablea.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.variablea.CheckedState.FillColor = System.Drawing.Color.BlueViolet;
-            this.variablea.CheckedState.InnerBorderColor = System.Drawing.Color.White;
-            this.variablea.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.variablea.Location = new System.Drawing.Point(234, 187);
-            this.variablea.Name = "variablea";
-            this.variablea.ShadowDecoration.BorderRadius = 50;
-            this.variablea.Size = new System.Drawing.Size(40, 20);
-            this.variablea.TabIndex = 34;
-            this.variablea.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.variablea.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.variablea.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
-            this.variablea.UncheckedState.InnerColor = System.Drawing.Color.White;
-            // 
-            // methoda
-            // 
-            this.methoda.Animated = true;
-            this.methoda.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.methoda.CheckedState.FillColor = System.Drawing.Color.BlueViolet;
-            this.methoda.CheckedState.InnerBorderColor = System.Drawing.Color.White;
-            this.methoda.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.methoda.Location = new System.Drawing.Point(234, 146);
-            this.methoda.Name = "methoda";
-            this.methoda.ShadowDecoration.BorderRadius = 50;
-            this.methoda.Size = new System.Drawing.Size(40, 20);
-            this.methoda.TabIndex = 33;
-            this.methoda.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.methoda.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.methoda.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
-            this.methoda.UncheckedState.InnerColor = System.Drawing.Color.White;
-            // 
-            // funcs
-            // 
-            this.funcs.Animated = true;
-            this.funcs.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.funcs.CheckedState.FillColor = System.Drawing.Color.BlueViolet;
-            this.funcs.CheckedState.InnerBorderColor = System.Drawing.Color.White;
-            this.funcs.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.funcs.Location = new System.Drawing.Point(232, 108);
-            this.funcs.Name = "funcs";
-            this.funcs.ShadowDecoration.BorderRadius = 50;
-            this.funcs.Size = new System.Drawing.Size(40, 20);
-            this.funcs.TabIndex = 32;
-            this.funcs.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.funcs.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.funcs.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
-            this.funcs.UncheckedState.InnerColor = System.Drawing.Color.White;
-            // 
-            // usinga
-            // 
-            this.usinga.Animated = true;
-            this.usinga.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.usinga.CheckedState.FillColor = System.Drawing.Color.BlueViolet;
-            this.usinga.CheckedState.InnerBorderColor = System.Drawing.Color.White;
-            this.usinga.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.usinga.Location = new System.Drawing.Point(124, 186);
-            this.usinga.Name = "usinga";
-            this.usinga.ShadowDecoration.BorderRadius = 50;
-            this.usinga.Size = new System.Drawing.Size(40, 20);
-            this.usinga.TabIndex = 31;
-            this.usinga.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.usinga.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.usinga.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
-            this.usinga.UncheckedState.InnerColor = System.Drawing.Color.White;
-            this.usinga.CheckedChanged += new System.EventHandler(this.usinga_CheckedChanged);
-            // 
-            // arraya
-            // 
-            this.arraya.Animated = true;
-            this.arraya.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.arraya.CheckedState.FillColor = System.Drawing.Color.BlueViolet;
-            this.arraya.CheckedState.InnerBorderColor = System.Drawing.Color.White;
-            this.arraya.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.arraya.Location = new System.Drawing.Point(122, 146);
-            this.arraya.Name = "arraya";
-            this.arraya.ShadowDecoration.BorderRadius = 50;
-            this.arraya.Size = new System.Drawing.Size(40, 20);
-            this.arraya.TabIndex = 30;
-            this.arraya.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.arraya.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.arraya.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
-            this.arraya.UncheckedState.InnerColor = System.Drawing.Color.White;
-            // 
-            // enuma
-            // 
-            this.enuma.Animated = true;
-            this.enuma.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.enuma.CheckedState.FillColor = System.Drawing.Color.BlueViolet;
-            this.enuma.CheckedState.InnerBorderColor = System.Drawing.Color.White;
-            this.enuma.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.enuma.Location = new System.Drawing.Point(122, 108);
-            this.enuma.Name = "enuma";
-            this.enuma.ShadowDecoration.BorderRadius = 50;
-            this.enuma.Size = new System.Drawing.Size(40, 20);
-            this.enuma.TabIndex = 29;
-            this.enuma.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.enuma.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.enuma.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
-            this.enuma.UncheckedState.InnerColor = System.Drawing.Color.White;
-            // 
-            // infoPanel
-            // 
-            this.infoPanel.Controls.Add(this.guna2Button3);
-            this.infoPanel.Controls.Add(this.guna2HtmlLabel7);
-            this.infoPanel.Controls.Add(this.guna2HtmlLabel10);
-            this.infoPanel.Controls.Add(this.guna2Button2);
-            this.infoPanel.Location = new System.Drawing.Point(176, 46);
-            this.infoPanel.Name = "infoPanel";
-            this.infoPanel.Size = new System.Drawing.Size(609, 345);
-            this.infoPanel.TabIndex = 27;
-            // 
-            // guna2Button3
-            // 
-            this.guna2Button3.Animated = true;
-            this.guna2Button3.AutoRoundedCorners = true;
-            this.guna2Button3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button3.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2Button3.BorderRadius = 22;
-            this.guna2Button3.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(50)))), ((int)(((byte)(96)))));
-            this.guna2Button3.HoverState.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button3.Image = global::SharpJunk.Properties.Resources.icons8_discord_60px;
-            this.guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button3.ImageSize = new System.Drawing.Size(28, 28);
-            this.guna2Button3.Location = new System.Drawing.Point(243, 179);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(50)))), ((int)(((byte)(101)))));
-            this.guna2Button3.Size = new System.Drawing.Size(47, 47);
-            this.guna2Button3.TabIndex = 32;
-            this.guna2Button3.UseTransparentBackground = true;
-            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
-            // 
-            // guna2HtmlLabel7
-            // 
-            this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel7.Font = new System.Drawing.Font("Segoe UI", 23F);
-            this.guna2HtmlLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(221, 96);
-            this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            this.guna2HtmlLabel7.Size = new System.Drawing.Size(144, 44);
-            this.guna2HtmlLabel7.TabIndex = 31;
-            this.guna2HtmlLabel7.Text = "SharpJunk";
-            // 
-            // guna2HtmlLabel10
-            // 
-            this.guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel10.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.guna2HtmlLabel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.guna2HtmlLabel10.Location = new System.Drawing.Point(278, 147);
-            this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
-            this.guna2HtmlLabel10.Size = new System.Drawing.Size(26, 19);
-            this.guna2HtmlLabel10.TabIndex = 29;
-            this.guna2HtmlLabel10.Text = "v1.0";
-            // 
-            // guna2Button2
-            // 
-            this.guna2Button2.Animated = true;
-            this.guna2Button2.AutoRoundedCorners = true;
-            this.guna2Button2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.BorderRadius = 22;
-            this.guna2Button2.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(50)))), ((int)(((byte)(96)))));
-            this.guna2Button2.HoverState.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button2.Image = global::SharpJunk.Properties.Resources.icons8_github_48px;
-            this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button2.ImageSize = new System.Drawing.Size(28, 28);
-            this.guna2Button2.Location = new System.Drawing.Point(296, 179);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(50)))), ((int)(((byte)(101)))));
-            this.guna2Button2.Size = new System.Drawing.Size(47, 47);
-            this.guna2Button2.TabIndex = 30;
-            this.guna2Button2.UseTransparentBackground = true;
-            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click_1);
             // 
             // threadBox
             // 
@@ -603,7 +283,7 @@
             this.threadBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.threadBox.ForeColor = System.Drawing.Color.White;
             this.threadBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.threadBox.Location = new System.Drawing.Point(201, 246);
+            this.threadBox.Location = new System.Drawing.Point(204, 261);
             this.threadBox.Name = "threadBox";
             this.threadBox.PasswordChar = '\0';
             this.threadBox.PlaceholderForeColor = System.Drawing.Color.White;
@@ -614,6 +294,272 @@
             this.threadBox.TabIndex = 37;
             this.threadBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // infoPanel
+            // 
+            this.infoPanel.Controls.Add(this.guna2Panel1);
+            this.infoPanel.Controls.Add(this.changelogs);
+            this.infoPanel.Controls.Add(this.guna2Button2);
+            this.infoPanel.Controls.Add(this.guna2HtmlLabel7);
+            this.infoPanel.Location = new System.Drawing.Point(176, 47);
+            this.infoPanel.Name = "infoPanel";
+            this.infoPanel.Size = new System.Drawing.Size(609, 345);
+            this.infoPanel.TabIndex = 27;
+            // 
+            // guna2HtmlLabel7
+            // 
+            this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel7.Font = new System.Drawing.Font("Segoe UI", 23F);
+            this.guna2HtmlLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(221, 96);
+            this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
+            this.guna2HtmlLabel7.Size = new System.Drawing.Size(144, 44);
+            this.guna2HtmlLabel7.TabIndex = 31;
+            this.guna2HtmlLabel7.Text = "SharpJunk";
+            // 
+            // guna2Button2
+            // 
+            this.guna2Button2.Animated = true;
+            this.guna2Button2.AutoRoundedCorners = true;
+            this.guna2Button2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button2.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Button2.BorderRadius = 22;
+            this.guna2Button2.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button2.ForeColor = System.Drawing.Color.White;
+            this.guna2Button2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(50)))), ((int)(((byte)(96)))));
+            this.guna2Button2.HoverState.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button2.Image = global::SharpJunk.Properties.Resources.icons8_github_48px;
+            this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button2.ImageSize = new System.Drawing.Size(28, 28);
+            this.guna2Button2.Location = new System.Drawing.Point(268, 213);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(50)))), ((int)(((byte)(101)))));
+            this.guna2Button2.Size = new System.Drawing.Size(47, 47);
+            this.guna2Button2.TabIndex = 30;
+            this.guna2Button2.UseTransparentBackground = true;
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click_1);
+            // 
+            // guna2ControlBox2
+            // 
+            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox2.Animated = true;
+            this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
+            this.guna2ControlBox2.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox2.Location = new System.Drawing.Point(692, 12);
+            this.guna2ControlBox2.Name = "guna2ControlBox2";
+            this.guna2ControlBox2.Size = new System.Drawing.Size(45, 29);
+            this.guna2ControlBox2.TabIndex = 29;
+            // 
+            // changelogs
+            // 
+            this.changelogs.BorderColor = System.Drawing.Color.Indigo;
+            this.changelogs.BorderRadius = 3;
+            this.changelogs.BorderThickness = 1;
+            this.changelogs.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.changelogs.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.changelogs.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.changelogs.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.changelogs.FillColor = System.Drawing.Color.Transparent;
+            this.changelogs.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.changelogs.ForeColor = System.Drawing.Color.White;
+            this.changelogs.Location = new System.Drawing.Point(224, 171);
+            this.changelogs.Name = "changelogs";
+            this.changelogs.Size = new System.Drawing.Size(134, 27);
+            this.changelogs.TabIndex = 32;
+            this.changelogs.Text = "v1.7";
+            this.changelogs.Click += new System.EventHandler(this.changelogs_Click);
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.FillColor = System.Drawing.Color.BlueViolet;
+            this.guna2Panel1.Location = new System.Drawing.Point(191, 142);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(200, 10);
+            this.guna2Panel1.TabIndex = 33;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(262, 48);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(79, 25);
+            this.label1.TabIndex = 38;
+            this.label1.Text = "Options";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.label2.Location = new System.Drawing.Point(208, 77);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(193, 17);
+            this.label2.TabIndex = 39;
+            this.label2.Text = "what you want in the junk code?";
+            // 
+            // enuma
+            // 
+            this.enuma.Animated = true;
+            this.enuma.BorderColor = System.Drawing.Color.Indigo;
+            this.enuma.BorderRadius = 3;
+            this.enuma.BorderThickness = 1;
+            this.enuma.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
+            this.enuma.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.enuma.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.enuma.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.enuma.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.enuma.FillColor = System.Drawing.Color.Transparent;
+            this.enuma.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.enuma.ForeColor = System.Drawing.Color.White;
+            this.enuma.Location = new System.Drawing.Point(36, 118);
+            this.enuma.Name = "enuma";
+            this.enuma.Size = new System.Drawing.Size(158, 29);
+            this.enuma.TabIndex = 33;
+            this.enuma.Text = "Enums";
+            // 
+            // arraya
+            // 
+            this.arraya.Animated = true;
+            this.arraya.BorderColor = System.Drawing.Color.Indigo;
+            this.arraya.BorderRadius = 3;
+            this.arraya.BorderThickness = 1;
+            this.arraya.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
+            this.arraya.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.arraya.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.arraya.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.arraya.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.arraya.FillColor = System.Drawing.Color.Transparent;
+            this.arraya.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.arraya.ForeColor = System.Drawing.Color.White;
+            this.arraya.Location = new System.Drawing.Point(36, 153);
+            this.arraya.Name = "arraya";
+            this.arraya.Size = new System.Drawing.Size(158, 29);
+            this.arraya.TabIndex = 44;
+            this.arraya.Text = "Arrays";
+            // 
+            // usinga
+            // 
+            this.usinga.Animated = true;
+            this.usinga.BorderColor = System.Drawing.Color.Indigo;
+            this.usinga.BorderRadius = 3;
+            this.usinga.BorderThickness = 1;
+            this.usinga.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
+            this.usinga.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.usinga.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.usinga.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.usinga.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.usinga.FillColor = System.Drawing.Color.Transparent;
+            this.usinga.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.usinga.ForeColor = System.Drawing.Color.White;
+            this.usinga.Location = new System.Drawing.Point(36, 188);
+            this.usinga.Name = "usinga";
+            this.usinga.Size = new System.Drawing.Size(158, 29);
+            this.usinga.TabIndex = 45;
+            this.usinga.Text = "Usings";
+            // 
+            // funcs
+            // 
+            this.funcs.Animated = true;
+            this.funcs.BorderColor = System.Drawing.Color.Indigo;
+            this.funcs.BorderRadius = 3;
+            this.funcs.BorderThickness = 1;
+            this.funcs.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
+            this.funcs.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.funcs.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.funcs.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.funcs.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.funcs.FillColor = System.Drawing.Color.Transparent;
+            this.funcs.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.funcs.ForeColor = System.Drawing.Color.White;
+            this.funcs.Location = new System.Drawing.Point(230, 118);
+            this.funcs.Name = "funcs";
+            this.funcs.Size = new System.Drawing.Size(158, 29);
+            this.funcs.TabIndex = 46;
+            this.funcs.Text = "Functions";
+            // 
+            // methoda
+            // 
+            this.methoda.Animated = true;
+            this.methoda.BorderColor = System.Drawing.Color.Indigo;
+            this.methoda.BorderRadius = 3;
+            this.methoda.BorderThickness = 1;
+            this.methoda.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
+            this.methoda.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.methoda.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.methoda.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.methoda.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.methoda.FillColor = System.Drawing.Color.Transparent;
+            this.methoda.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.methoda.ForeColor = System.Drawing.Color.White;
+            this.methoda.Location = new System.Drawing.Point(230, 153);
+            this.methoda.Name = "methoda";
+            this.methoda.Size = new System.Drawing.Size(158, 29);
+            this.methoda.TabIndex = 47;
+            this.methoda.Text = "Methods";
+            // 
+            // variablea
+            // 
+            this.variablea.Animated = true;
+            this.variablea.BorderColor = System.Drawing.Color.Indigo;
+            this.variablea.BorderRadius = 3;
+            this.variablea.BorderThickness = 1;
+            this.variablea.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
+            this.variablea.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.variablea.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.variablea.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.variablea.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.variablea.FillColor = System.Drawing.Color.Transparent;
+            this.variablea.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.variablea.ForeColor = System.Drawing.Color.White;
+            this.variablea.Location = new System.Drawing.Point(415, 188);
+            this.variablea.Name = "variablea";
+            this.variablea.Size = new System.Drawing.Size(158, 29);
+            this.variablea.TabIndex = 48;
+            this.variablea.Text = "Variables";
+            // 
+            // ifelse
+            // 
+            this.ifelse.Animated = true;
+            this.ifelse.BorderColor = System.Drawing.Color.Indigo;
+            this.ifelse.BorderRadius = 3;
+            this.ifelse.BorderThickness = 1;
+            this.ifelse.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
+            this.ifelse.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.ifelse.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.ifelse.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.ifelse.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.ifelse.FillColor = System.Drawing.Color.Transparent;
+            this.ifelse.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.ifelse.ForeColor = System.Drawing.Color.White;
+            this.ifelse.Location = new System.Drawing.Point(415, 118);
+            this.ifelse.Name = "ifelse";
+            this.ifelse.Size = new System.Drawing.Size(158, 29);
+            this.ifelse.TabIndex = 49;
+            this.ifelse.Text = "Conditions";
+            // 
+            // dlla
+            // 
+            this.dlla.Animated = true;
+            this.dlla.BorderColor = System.Drawing.Color.Indigo;
+            this.dlla.BorderRadius = 3;
+            this.dlla.BorderThickness = 1;
+            this.dlla.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
+            this.dlla.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.dlla.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.dlla.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.dlla.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.dlla.FillColor = System.Drawing.Color.Transparent;
+            this.dlla.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dlla.ForeColor = System.Drawing.Color.White;
+            this.dlla.Location = new System.Drawing.Point(415, 153);
+            this.dlla.Name = "dlla";
+            this.dlla.Size = new System.Drawing.Size(158, 29);
+            this.dlla.TabIndex = 50;
+            this.dlla.Text = "Dll Imports";
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -621,14 +567,16 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(37)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panelGen);
+            this.Controls.Add(this.guna2ControlBox2);
             this.Controls.Add(this.infoPanel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.panelSet);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Main Menu";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
@@ -650,32 +598,27 @@
         private Guna.UI2.WinForms.Guna2Button Genbtn;
         private Guna.UI2.WinForms.Guna2Button Settingsbtn;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
-        private Guna.UI2.WinForms.Guna2HtmlLabel enums;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
-        private Guna.UI2.WinForms.Guna2HtmlLabel arrays;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2Panel panelGen;
         private Guna.UI2.WinForms.Guna2Panel panelSet;
         private Guna.UI2.WinForms.Guna2Panel infoPanel;
-        private Guna.UI2.WinForms.Guna2ToggleSwitch enuma;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2ToggleSwitch dlla;
-        private Guna.UI2.WinForms.Guna2ToggleSwitch ifelse;
-        private Guna.UI2.WinForms.Guna2ToggleSwitch variablea;
-        private Guna.UI2.WinForms.Guna2ToggleSwitch methoda;
-        private Guna.UI2.WinForms.Guna2ToggleSwitch funcs;
-        private Guna.UI2.WinForms.Guna2ToggleSwitch usinga;
-        private Guna.UI2.WinForms.Guna2ToggleSwitch arraya;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Guna.UI2.WinForms.Guna2TextBox threadBox;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
+        private Guna.UI2.WinForms.Guna2Button guna2Button5;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Button changelogs;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2Button dlla;
+        private Guna.UI2.WinForms.Guna2Button ifelse;
+        private Guna.UI2.WinForms.Guna2Button variablea;
+        private Guna.UI2.WinForms.Guna2Button methoda;
+        private Guna.UI2.WinForms.Guna2Button funcs;
+        private Guna.UI2.WinForms.Guna2Button usinga;
+        private Guna.UI2.WinForms.Guna2Button arraya;
+        private Guna.UI2.WinForms.Guna2Button enuma;
     }
 }
 
