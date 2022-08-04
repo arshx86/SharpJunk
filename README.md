@@ -1,22 +1,15 @@
 # SharpJunk
-> SharpJunk is a **junk code** generator tool for **csharp**. Tool working externally, builds junk code as your requirements.
+> Junk code generator for your C# projects.
 
 ## Options
-> We support different options to you build different junk codes with your requirements.
+> Different options made for building special junk codes. You choose how your code will generated. 
 
-![](https://media.discordapp.net/attachments/972666197625667644/972666316563550278/unknown.png?width=818&height=468)
+![](https://cdn.discordapp.com/attachments/996097478367658126/1004859496302133378/unknown.png)
 
-| Option      | Description                         |
-| ----------- | ----------------------------------- |
-| Thread      | loop count of junk generation       |
-| Enum        | enums with random int value.        |
-| Array       | empty/null or filled random array.  |
-| Using       | random namespace **system** usings. |
-| Functions   | delegate/void functions             |
-| Methods     | any type methods                    |
-| Variables   | random type variables               |
-| If Else     | if else logics                      |
-| DLL Imports | random static dll imports           |
+## Building
+> Done setting up? `editor > generate` and copy your generated junk and ready to go. We'll also format your code :)
+
+![](https://media.discordapp.net/attachments/996097478367658126/1004861038921007194/unknown.png?width=816&height=473)
 
 ## Example Junk Code
 
@@ -56,9 +49,13 @@ namespace XstXqAdNPRdXmfW
     }
 }
 ```
-## Warning
-> I wrote this on back to **2021 aug**, code might need refactor.
 
-> Junks may not always valid. You may need to generate it again. 
+## Todo
+- [ ] Cross platform support.
+- [ ] Junk generation depends on analyzed assembly. (Not static)
+- [ ] **AV** evading options.
 
-* Icons from icons8.com (pichon)
+## Notes
+* Licensed under MIT.
+* Feel free to create PR & reporting issues :)
+* Icons from icons8.
